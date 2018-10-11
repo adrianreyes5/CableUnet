@@ -1,0 +1,170 @@
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  background-color: #F2F2F2;
+}
+
+h2,.Guia {
+  color: #494949;
+}
+
+hr {
+  background-color: #D1D0D0;
+}
+
+li {
+  list-style: none;
+}
+
+
+#header {
+  width: 100%;
+  margin: auto;
+  border-bottom: 1px solid #C3C2C2;
+  font-family: Arial black;
+  margin: 0px 0px 60px;
+}
+
+.cabezera {
+  background-color: #2B3EFC;
+  color: #000;
+  line-height: 30px;
+  padding: 5px 0;
+}
+
+.cabezera p {
+  margin:5px 0 5px 10px;
+}
+
+.cabezera_user {
+  background-color: #000;
+  color: #1800FE;
+  line-height: 38px;
+}
+
+#header_user {
+  width: 100%;
+  margin: auto;
+  border-bottom: 1px solid #C3C2C2;
+  font-family: Arial black;
+  margin: 0px 0px 60px;
+}
+
+.nav {
+  margin-left: 165px;
+  position: relative;
+  bottom: 8px;
+  height: 48px;
+}
+
+.nav_user {
+  margin-left: 325px;
+  position: relative;
+  bottom: 8px;
+  height: 32px;
+}
+
+.nav li a,.nav_user li a{
+  background-color: #F2F2F2;
+  border: 1px solid #C3C2C2;
+  border-bottom: 4px solid #C3C2C2;
+  color: #565656;
+  text-decoration: none;
+  padding: 15px 15px;
+  border-radius: 2px;
+  font-size: 14px;
+  display: block;
+}
+
+.nav > li,.nav_user > li {
+  float: left;
+}
+
+.nav li a:hover,.nav_user li a:hover {
+  border-bottom: 1px solid #C3C2C2;
+  border-top: none;
+  transition: 0.1s;
+}
+
+.nav li ul,.nav_user li ul {
+  display: none;
+  position: absolute;
+  min-width: 195px;
+}
+
+.nav li:hover > ul,.nav_user li:hover > ul {
+  display: block;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+.Guia {
+  width: 30%;
+  font-family: Arial black;
+  position: relative;
+  left: 100px;
+  top: 40px;
+}
+
+.form {
+  width: 20%;
+  margin-left: 73.5%;
+}
+
+.form input[type="text"] {
+  border-radius: 3px;
+  width: 78%;
+  height: 30px;
+}
+
+.form input[type="submit"] {
+  border-radius: 3px;
+  height: 30px;
+}
+
+.programas {
+  display: inline-block;
+  background-color: #D6D6D6;
+  color: #000;
+  border-radius: 4px;
+  padding: 5px;
+  font-size:13px;
+}
+
+.hora {
+  color: #000;
+  font-family: Arial black;
+}
+
+.canales {
+  width: 10%;
+  text-align: center;
+  font-family: Arial black;
+  padding: 3px;
+  margin: 8px 0;
+  color: #fff;
+  background-color: #000000;
+  border-radius: 4px;
+}
+
