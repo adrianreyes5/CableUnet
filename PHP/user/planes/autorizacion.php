@@ -66,16 +66,20 @@
  <!DOCTYPE html>
  <html>
  <head>
- 	<title></title>
+ 	<title>Plan registrado</title>
+ 	<link rel="stylesheet" type="text/css" href="../../../css/registro.css">
+ 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
  </head>
- <body>
+ <body style="background-color: #E5E5E5">
 
- 	<div class="container">
- 		
- 		<h2>Tu solicitud ha sido enviada</h2>
+ 	<div class="container registrado" style="background-color: #C2C2C2">
+
+		<h2>Tu solicitud ha sido enviada</h2>
  		<p>Esto toma un poco de tiempo. Se te enviara una notificacíon cuando tu plan haya sido cambiado u ocurra algun inconveniente.</p>
- 		<p><a href="../../user/index.php">Aceptar</a></p>
-
+ 		<div style="background-color: #7D88A1">
+ 			<a href="../../user/index.php">Aceptar</a>
+ 		</div>
+ 		
  	</div>
  
  </body>
@@ -135,15 +139,19 @@
  <html>
  <head>
  	<title>solicitud cambio plan</title>
+ 	<link rel="stylesheet" type="text/css" href="../../../css/registro.css">
+ 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
  </head>
- <body>
+ <body style="background-color: #E5E5E5">
 
- 	<div class="container">
+ 	<div class="container registrado" style="background-color: #C2C2C2">
+
+		<h2>Tu solicitud ha sido enviada</h2>
+ 		<p>Esto toma un poco de tiempo. Se te enviara una notificacíon cuando tu plan haya sido cambiado u ocurra algun inconveniente.</p>
+ 		<div style="background-color: #7D88A1">
+ 			<a href="../../user/index.php">Aceptar</a>
+ 		</div>
  		
- 		<h2>Tu solicitud ha sido enviada</h2>
- 		<p>Esto toma un poco de tiempo. Se te enviara una notisasdaficacíon cuando tu plan haya sido cambiado u ocurra algun inconveniente.</p>
- 		<p><a href="../../user/index.php">Aceptar</a></p>
-
  	</div>
  
  </body>

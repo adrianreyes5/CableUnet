@@ -38,7 +38,7 @@
 
 			<li><a href="planes/plan_canal.php">Planes de canales</a></li>
 
-			<li><a href="">Facturas mensuales</a></li>
+			<li><a href="config_user/factura.php">Facturas mensuales</a></li>
 
 			<li><a href="../Admin/confg_admin/cierre.php">Cerrar sesión</a></li>
 		</ul>		

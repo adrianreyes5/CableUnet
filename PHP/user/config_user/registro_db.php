@@ -47,14 +47,21 @@
  <html>
  <head>
  	<title>Registro Exitoso</title>
+ 	<link rel="stylesheet" type="text/css" href="../../../css/registro.css">
+ 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
  </head>
- <body>
- 
-	<h1>Registro completado</h1>
+ <body style="background-color: #2c3335">
 
-	<div>
-		<a href="../log/login.php">Aceptar</a>
-	</div>
+ 	<div class="container registrado">
+
+		<h1 >Registro completado</h1>
+
+		<div >
+			<a href="../log/login.php">Aceptar</a>
+		</div>
+ 		
+ 	</div>
+	 
 
  </body>
  </html>

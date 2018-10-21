@@ -2,11 +2,11 @@
 <html>
 <head>
 	<title>Login</title>
-	<!-- <link rel="stylesheet" type="text/css" href="../../../css/login.css"> -->
+	<link rel="stylesheet" type="text/css" href="../../../css/login.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 </head>
-<body>
+<body class="body">
 	
 	<div class="container">
 		<div class="row">
@@ -15,7 +15,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-12 col-md-6 offset-0 offset-md-3 border border-dark p-4">				
+			<div class="col-12 col-md-6 offset-0 offset-md-3 border border-white p-4">				
 				<form method="post" action="../config_user/login_db.php">
 					<div class="form-group">
 						<label for="user">Usuario</label>

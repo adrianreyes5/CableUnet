@@ -104,12 +104,22 @@
  <html>
  <head>
  	<title>Facturación</title>
+ 	<link rel="stylesheet" type="text/css" href="../../../css/registro.css">
+ 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
  </head>
- <body>
+ <body style="background-color: #CBCBCB">
 
- 	<h1>Paquete registrado con exito</h1>
+ 	<div class="container registrado" style="background-color: #E7E7E7">
+ 		<h1>Paquete registrado con exito</h1>
 
- 	<p><a href="../../user/index.php">Ir a pagina principal</a></p>
+ 		<div style="background-color: #7D88A1">
+ 			<a href="../../user/index.php">Ir a inicio</a>
+ 		</div>
+
+	 	
+ 	</div>
+
+	 	
  
  </body>
  </html>
