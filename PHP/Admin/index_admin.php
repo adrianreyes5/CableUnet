@@ -17,73 +17,91 @@
 	}
 ?>
 
+<?php 
+
+$sql4="SELECT * FROM solicitudes";
+$result_s=$base->prepare($sql4);
+$result_s->execute();
+
+$cont=0;
+
+while ($current_s = $result_s->fetch(PDO::FETCH_ASSOC)) {
+	$cont++;
+}
+
+?>
 
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Administrador</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="../../css/canales_guia.css">
 </head>
 <body>
 
-	<div id="header">
-		
-		<h2 class="cabezera"><p>Cable Unet Administrador</p></h2>
 
-		<ul class="nav">
+	
 
-			<li><a href="servicios/programas.php">Registro de programas</a></li>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Cable Unet Administrador</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-			<li><a href="carga_programacion/programacion.php">Carga de programacion</a></li>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">     
+      <li class="nav-item">
+        <a class="nav-link" href="servicios/programas.php">Registro</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="carga_programacion/programacion.php">Carga de programacion</a>
+      </li>
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Creacion de servicios
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="servicios/internet.php">Internet</a>
+          <a class="dropdown-item" href="servicios/telefonia.php">Telefonia</a>          
+          <a class="dropdown-item" href="servicios/cable.php">Cable</a>
+          <a class="dropdown-item" href="servicios/canal.php">Canales</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Paquetes        
+		</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="paquetes/pack_servicios.php">Servicios</a>
+			<a class="dropdown-item" href="paquetes/pack_canales.php">Canales</a>
+        </div>
+      </li>
+      <li class="nav-item">
+	  	<a class="nav-link" href="confg_admin/solicitudes.php">Solicitudes <?php echo "(". $cont . ")"; ?></a>
+	  </li>
 
-			<li><a>Creacion de servicios</a>
-				
-				<ul>
-					<li><a href="servicios/internet.php">Internet</a></li>
-					<li><a href="servicios/telefonia.php">Telefonia</a></li>
-					<li><a href="servicios/cable.php">Cable</a></li>
-					<li><a href="servicios/canal.php">Canales</a></li>
-				</ul>
+	  <li class="nav-item">
+	  	<a class="nav-link" href="confg_admin/cierre.php">Cerrar sesión</a>
+	  </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" method="post" action="confg_admin/busqueda_db.php">
+      <input class="form-control mr-sm-2" type="search" placeholder="Busqueda" aria-label="Search" name="busqueda" required>
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit" name="buscar_admin">Buscar</button>
+    </form>
+  </div>
+</nav>
 
-			</li>
+	<div class="container">
+		<div class="row">
+			<div class="col">
 
-			<li><a>Paquetes</a>
-				
-				<ul>
-					<li><a href="paquetes/pack_servicios.php">Servicios</a></li>
-					<li><a href="paquetes/pack_canales.php">Canales</a></li>
-				</ul>
-
-			</li>
-
-			<?php 
-
-				$sql4="SELECT * FROM solicitudes";
-	    		$result_s=$base->prepare($sql4);
-	    		$result_s->execute();
-
-	    		$cont=0;
-
-	    		while ($current_s = $result_s->fetch(PDO::FETCH_ASSOC)) {
-	    			$cont++;
-	    		}
-
-			 ?>
-
-
-			<li><a href="confg_admin/solicitudes.php">Solicitudes <?php echo "(". $cont . ")"; ?></a></li>
-
-			<li><a href="confg_admin/cierre.php">Cerrar sesión</a></li>
-		</ul>		
+				<h2 class="Guia">Guia de Programación</h2>
+			</div>
+		</div>
 	</div>
 
-	<h2 class="Guia">Guia de Programación</h2>
-
-	<form method="post" action="confg_admin/busqueda_db.php" class="form">
-		<input type="text" name="busqueda" placeholder="Buscar.." required="">
-		<input type="submit" name="buscar_admin" value="Enviar">
-	</form>
+	
 
 
 	<div class="container">
@@ -125,6 +143,8 @@
 			
 		</section>
 	</div>
-
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
