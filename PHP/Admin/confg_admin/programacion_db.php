@@ -59,7 +59,7 @@
 
  			<div class="a">
  				<a class="p_a" href="../carga_programacion/programacion.php">Volver a registro</a>
-				<a class="p_a" href="../cableunet_admin.php">Pagina principal</a>
+				<a class="p_a" href="../index_admin.php">Pagina principal</a>
  			</div>			
  		</div>
 	<?php endif ?>

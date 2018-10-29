@@ -105,43 +105,55 @@ while ($current_s = $result_s->fetch(PDO::FETCH_ASSOC)) {
 
 
 	<div class="container">
+		
+			 
+				<?php 
 
-		<section>
-			<?php 
+					$sql="SELECT * FROM programacion_canal";
+					$result=$base->prepare($sql);
+					$result->execute();
 
-		    	$sql="SELECT * FROM programacion_canal";
-		    	$result=$base->prepare($sql);
-		    	$result->execute();
+					while ($current = $result->fetch(PDO::FETCH_ASSOC)):?>
 
-		    	while ($current = $result->fetch(PDO::FETCH_ASSOC)):?>
 
-			    	<?php 
+						<?php 
 
-			    		echo "<div class='canales'>" . $current['nombre_canal'] . "</div>";
+							echo "<div class='row'><div class='col'><h3 class='text-center'>" . $current['nombre_canal'] . "</h3 class='text-center'></div></div>";
 
-			    		$programas=explode(",",$current['id_progra']);
 
-			    		$sql="SELECT * FROM programas";
-			    		$result_p=$base->prepare($sql);
-			    		$result_p->execute();
+							echo "<div class='row'>";
+							$programas=explode(",",$current['id_progra']);
+							
+							$sql="SELECT * FROM programas";
+							$result_p=$base->prepare($sql);
+							$result_p->execute();
+							
+							while($prog = $result_p->fetch(PDO::FETCH_ASSOC)){
+								
+								foreach ($programas as $key) {
+									
+									if ($prog['id'] == $key) {
+										/*echo "<div class='programas'>" . " <div class='hora'>". $prog['hora_comienzo'] . " - " . $prog['hora_termina'] . "</div>" . $prog['programa'] . "  </div> ";*/
+										echo "<div class='col-12 col-sm-6 col-md-4 col-lg-3'>
+														<div class='card text-white bg-primary mb-3'>
+															<h5 class='card-header'>" . $prog['hora_comienzo'] . " - " . $prog['hora_termina'] ."</h5>
+															<div class='card-body'>
+																<h5 class='card-title'>" . $prog['programa'] ."</h5>
+															</div>
+														</div>
+													</div>														
+													";
+									}
+								}
+							}
+							echo "</div>";
+						?>
 
-			    		while($prog = $result_p->fetch(PDO::FETCH_ASSOC)){
+						<hr>
 
-			    			foreach ($programas as $key) {
-
-			    				if ($prog['id'] == $key) {
-			    					echo "<div class='programas'>" . " <div class='hora'>". $prog['hora_comienzo'] . " - " . $prog['hora_termina'] . "</div>" . $prog['programa'] . "  </div> ";
-			    				}
-			    			}
-			    		}
-
-			    	 ?>
-
-			    	<hr>
-
-		    	<?php endwhile ?>		
+					<?php endwhile ?>		
 			
-		</section>
+		
 	</div>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
