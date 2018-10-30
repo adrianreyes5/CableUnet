@@ -38,23 +38,31 @@
  </head>
  <body>
 
- 	<div id="header">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="../index.php">CableUnet </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-			<h2 class="cabezera">Cable Unet <br><?php echo $_SESSION['usuario'] ?></br></h2>
-
-			<ul class="nav">
-
-				<li><a href="../index.php">Programación</a></li>
-
-				<li><a href="plan_serv.php">Paquetes de servicios</a></li>
-
-				<li><a href="plan_canal.php">Planes de canales</a></li>
-
-				<li><a href="">Facturas mensuales</a></li>
-
-				<li><a href="../../Admin/confg_admin/cierre.php">Cerrar sesión</a></li>
-			</ul>		
-		</div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">     
+      <li class="nav-item">
+        <a class="nav-link" href="plan_serv.php">Paquetes de servicios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="plan_canal.php">Paquetes de canales</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../config_user/factura.php">Pagos mensuales</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../Admin/confg_admin/cierre.php">Cerrar sesión</a>
+      </li>
+  
+    </ul>
+ 
+  </div>
+</nav>
 
 	<div class="container">
 
@@ -201,23 +209,31 @@
  </head>
  <body>
 
- 	<div id="header">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="../index.php">CableUnet </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-		<h2 class="cabezera">Cable Unet <br><?php echo $_SESSION['usuario'] ?></br></h2>
-
-		<ul class="nav">
-
-			<li><a href="../index.php">Programación</a></li>
-
-			<li><a href="plan_serv.php">Paquetes de servicios</a></li>
-
-			<li><a href="plan_canal.php">Planes de canales</a></li>
-
-			<li><a href="">Facturas mensuales</a></li>
-
-			<li><a href="../../Admin/confg_admin/cierre.php">Cerrar sesión</a></li>
-		</ul>		
-	</div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">     
+      <li class="nav-item">
+        <a class="nav-link" href="plan_serv.php">Paquetes de servicios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="plan_canal.php">Paquetes de canales</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../config_user/factura.php">Pagos mensuales</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../Admin/confg_admin/cierre.php">Cerrar sesión</a>
+      </li>
+  
+    </ul>
+ 
+  </div>
+</nav>
 
  	<div class="container">
 

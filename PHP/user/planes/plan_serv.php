@@ -32,22 +32,39 @@
 </head>
 <body>
 
-	<div id="header">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="../index.php">CableUnet </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-		<h2 class="cabezera">Cable Unet <br><?php echo $_SESSION['usuario'] ?></br></h2>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">     
+      <li class="nav-item">
+        <a class="nav-link" href="plan_serv.php">Paquetes de servicios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="plan_canal.php">Paquetes de canales</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../config_user/factura.php">Pagos mensuales</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../../Admin/confg_admin/cierre.php">Cerrar sesión</a>
+      </li>
+  
+    </ul>
+ 
+  </div>
+</nav>
 
-		<ul class="nav">
+	<div class="container" style="background-color: #F2F2F2">
+		<div class="row">
+			<div class="col mt-5">
 
-			<li><a href="../index.php">Programación</a></li>
-
-			<li><a href="plan_serv.php">Paquetes de servicios</a></li>
-
-			<li><a href="plan_canal.php">Planes de canales</a></li>
-
-			<li><a href="../config_user/factura.php">Facturas mensuales</a></li>
-
-			<li><a href="../../Admin/confg_admin/cierre.php">Cerrar sesión</a></li>
-		</ul>		
+				<h2 class="Guia">Paquetes de servicios</h2>
+			</div>
+		</div>
 	</div>
 
 	<div class="container">
@@ -150,7 +167,11 @@
 
 			<?php endif ?>
 			
-		<?php endwhile ?>			
+		<?php endwhile ?>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>			
 
 </body>
 </html>

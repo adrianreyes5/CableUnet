@@ -16,74 +16,15 @@ body {
   background-color: #ECECEC;
 }
 
-li {
-  list-style: none;
-}
-
-
-#header {
-  width: 100%;
-  margin: auto;
-  border-bottom: 1px solid #C3C2C2;
-  font-family: Arial black;
-  margin: 0px 0px 60px;
-}
-
-.cabezera {
-  background-color: #2B3EFC;
-  color: #000;
-  padding: 10px;
-  font-size: 32px;
-  line-height: 30px;
-}
-
-.nav {
-  margin-left: 190px;
-  position: relative;
-  height: 48px;
-  bottom: 8px;
-}
-
-.nav li a{
-  background-color: #ECECEC;
-  border: 1px solid #C3C2C2;
-  border-bottom: 4px solid #C3C2C2;
-  color: #565656;
-  text-decoration: none;
-  padding: 15px 15px;
-  border-radius: 2px;
-  font-size: 14px;
-  display: block;
-}
-
-.nav > li {
-  float: left;
-}
-
-.nav li a:hover {
-  border-bottom: none;
-  border-top: none;
-  transition: 0.1s;
-}
-
-.nav li ul {
-  display: none;
-  position: absolute;
-  min-width: 195px;
-}
-
-.nav li:hover > ul {
-  display: block;
-}
-
+ 
 .container {
   background-color: #F9F9F9;
-  border: 2px solid #9E9E9F;
   width: 85%;
   margin: auto;
   margin-top: 5%;
-  border-radius: 7px;
   padding: 15px;
+  background: #F9F9F9;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .container_canal {
@@ -214,8 +155,7 @@ input {
 
 .back_progra {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  background-color: #ECECEC;
-  line-height: 30px;
+  background-color: #fff;
 }
 
 .select_canal {
@@ -247,62 +187,7 @@ input {
   transition: background-color 0.1s ease-in-out;
 }
 
-#header_progra {
-  width: 100%;
-  margin: auto;
-  border-bottom: 1px solid #C3C2C2;
-  border-radius: 3px;
-  font-family: Arial black;
-  margin: 0px auto;
-}
-
-.cabezera_progra {
-  background-color: #2B3EFC;
-  color: #000;
-  padding: 10px;
-  font-size: 32px;
-  line-height: 30px;
-}
-
-.nav_progra {
-  margin-left: 275px;
-  position: relative;
-  bottom: 8px;
-  height: 31px;
-}
-
-.nav_progra li a{
-  background-color: #ECECEC;
-  color: #565656;
-  border: 1px solid #C3C2C2;
-  border-bottom: 4px solid #C3C2C2;
-  text-decoration: none;
-  padding: 10px 15px;
-  border-radius: 2px;
-  font-size: 14px;
-  display: block;
-}
-
-.nav_progra > li {
-  float: left;
-}
-
-.nav_progra li a:hover {
-  border-bottom: 1px solid #C3C2C2;
-  border-top: none;
-  transition: 0.1s;
-}
-
-.nav_progra li ul {
-  display: none;
-  position: absolute;
-  min-width: 195px;
-}
-
-.nav_progra li:hover > ul {
-  display: block;
-  margin-top: 2px;
-}
+ 
 
 .p_registrada {
   background-color: #636363;
@@ -341,7 +226,7 @@ input {
 }
 
 .serv_a {
-  padding: 15px;
+   
   margin-left: 40px;
   text-align: center;
   text-decoration: none;

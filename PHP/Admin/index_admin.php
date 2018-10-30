@@ -39,11 +39,8 @@ while ($current_s = $result_s->fetch(PDO::FETCH_ASSOC)) {
 </head>
 <body>
 
-
-	
-
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Cable Unet Administrador</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">CableUnet Admin</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -51,7 +48,7 @@ while ($current_s = $result_s->fetch(PDO::FETCH_ASSOC)) {
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">     
       <li class="nav-item">
-        <a class="nav-link" href="servicios/programas.php">Registro</a>
+        <a class="nav-link" href="servicios/programas.php">Registro de programas</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="carga_programacion/programacion.php">Carga de programacion</a>
@@ -94,9 +91,9 @@ while ($current_s = $result_s->fetch(PDO::FETCH_ASSOC)) {
 
 	<div class="container">
 		<div class="row">
-			<div class="col">
+			<div class="col mt-5">
 
-				<h2 class="Guia">Guia de Programación</h2>
+				<h2 class="Guia mb-4 mt-5">Guia de Programación</h2>
 			</div>
 		</div>
 	</div>
